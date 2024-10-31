@@ -1,0 +1,120 @@
+input.planaby-admin-search-input.ui-autocomplete-loading {
+    background: white url(../images/ui-anim_basic_16x16.gif) right 48px center no-repeat;
+}
+
+input.planaby-admin-search-input{
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #e5eaf5;
+	padding: 12px 15px;
+	border-radius: 5px;
+	font-size: 16px;
+
+	outline: none;
+
+	color: #444;
+}
+
+input.planaby-admin-search-input.planaby-admin-search-results-opened{
+	border-radius: 5px 5px 0 0;
+}
+
+input.planaby-admin-search-input:focus{
+	border-color: #4d90fe;
+	color: #000;
+}
+
+.planaby-admin-search-results{
+	background: white;
+	border: 2px solid #e5eaf5;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-menu-item-wrapper{
+	padding: 5px 15px;
+    border-top: 1px solid rgba(100,100,100,.1);
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-menu-item:first-child .ui-menu-item-wrapper{
+    border-top: none;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-menu-item:last-child .ui-menu-item-wrapper{
+    border-radius: 0 0 5px 5px;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-state-active {
+	margin: 0;
+
+	background: #0073ea url(../images/ui-bg_highlight-soft_25_0073ea_1x100.png) 50% 50% repeat-x;
+
+	box-shadow: 0 0 0 2px #0073ea;
+}
+
+#planaby-admin-search-results-container .planaby-admin-search-result-username{
+	font-weight: bold;
+	color: #444;
+	font-size: 16px;
+}
+
+#planaby-admin-search-results-container .planaby-admin-search-result-details{
+	color: #888;
+	font-size: 13px;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-state-active{
+	color: white;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-state-active .planaby-admin-search-result-username{
+	color: #fff;
+}
+
+#planaby-admin-search-results-container .ui-menu .ui-state-active .planaby-admin-search-result-details{
+	color: #ddd;
+}
+
+.planaby-admin-search-input-toggle{
+	width: 32px;
+	top: 0;
+	right: 7px;
+	bottom: 0;
+	background: #479ff8;
+	margin: auto;
+	height: 32px;
+	border-radius: 5px;
+
+	position: relative;
+	float: right;
+	top: -39px;
+}
+
+.planaby-admin-search-input-toggle:after{
+    position: absolute;
+    content: "";
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    transform: rotate(45deg);
+}
+
+input.planaby-admin-search-input.planaby-admin-search-results-opened+.planaby-admin-search-input-toggle{
+	
+}
+
+input.planaby-admin-search-input.planaby-admin-search-results-opened+.planaby-admin-search-input-toggle:after{
+	transform: rotate(135deg);
+}
+
+#planaby-admin-search-results-container .ui-menu{
+	z-index: 999999;
+}
